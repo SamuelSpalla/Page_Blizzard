@@ -1,12 +1,11 @@
 var thumbs = new Swiper(".slide-thumb", {
-  spaceBetween: 20,
+  spaceBetween: 1,
   slidesPerView: 5,
   watchSlidesProgress: true,
 });
 
 
 var swiper2 = new Swiper(".slide-principal", {
-  direction: "vertical",
   disableOnInteraction: true,
   allowTouchMove: false,
   autoplay: {

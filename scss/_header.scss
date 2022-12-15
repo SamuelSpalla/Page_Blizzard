@@ -77,9 +77,42 @@ header {
                 background-color: #6fcefa;
                 border-color: #6fcefa;
             }
+
+            .btn-mobile{
+                display: none;
+            }
         }
     }
 
+
+
+    @media(max-width: 991px){
+        .left{
+            nav{
+                display: none;
+            }
+        }
+        .right{
+            .btn-mobile{
+                display: block!important;
+                margin-left: 4rem;
+            }
+        }
+    }
+
+    @media(max-width: 560px){
+        .container{
+            .right{
+                .btn-acc{
+                    display: none;
+                }
+                .btn-log{
+                    display: none;
+                }
+            }
+        }
+        
+    }
 }
 
 

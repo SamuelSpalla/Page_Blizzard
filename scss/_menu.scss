@@ -22,31 +22,31 @@
             grid-gap: 1rem 2rem;
             li{
                 a {
-                width: 12rem;
-                height: 10rem;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                flex-direction: column;
-                .icon{
-                    width: 4rem;
-                    height: 4rem;
+                    width: 12rem;
+                    height: 10rem;
                     display: flex;
                     align-items: center;
                     justify-content: center;
-                    margin-bottom: 0.5rem;
-                }
-                span{
-                    display: block;
-                    text-align: center;
-                    font-weight: 500;
-                    font-size: 1rem;
-                    line-height: 120%;
-                    color: #9D9D9D;
+                    flex-direction: column;
+                    .icon{
+                        width: 4rem;
+                        height: 4rem;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        margin-bottom: 0.5rem;
+                    }
+                    span{
+                        display: block;
+                        text-align: center;
+                        font-weight: 500;
+                        font-size: 1rem;
+                        line-height: 120%;
+                        color: #9D9D9D;
 
-                }
+                    }
                 
-            }
+                }
 
             }
             
@@ -79,6 +79,26 @@
             }
             
         }
+    }
+
+    @media(max-width: 1200px){
+        .area-menu{
+            ul{
+                grid-gap: 1rem 0.4rem;
+                li{
+                    a{
+                        span{
+                            font-size: 0.9rem;
+                        }
+                    }
+                    
+                }
+            }
+        }
+    }
+
+    @media(max-width: 991px){
+        display: none;
     }
 }
 
